@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./custom-file.css">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body style="font-family: 'Gotham'">
+  <div id="main" class="main max-h-screen overflow-y-auto m-auto z-[1] relative border border-solid max-w-[768px]  mx-auto bg-no-repeat h-screen w-screen" style="background-image: url('assets/bg.png'); background-size: 100%;">
+      <div class="px-container-padding max-w-container mx-auto">
+        <div class="text-center pt-20">
+          <img src="assets/logo.png" alt="logo" class="w-full max-w-[250px] xss:max-w-[300px] md:max-w-[400px] mx-auto mb-8">
+          <p class="text-[#0448ae] text-xl leading-[24px] mb-[30px] text-center font-semibold">Dear colleagues, <br/>
+            you're invited to the <br/>
+            NETS Kickoff Townhall 2025.</p>
+            <p class="text-[#0448ae] text-xl leading-[24px] mb-[30px] text-center font-semibold w-full max-w-[300px] xs:max-w-[400px] mx-auto">Join us for an afternoon of
+              interactive sessions and
+              learn more about what's
+              upcoming for NETS.</p>
+        </div>
+        <form id="rsvp-form" class="">
+          <div class="bg-[#0046ad] p-[24px] xxs:p-[40px] rounded-lg mb-[30px]">
+            <div class="mb-6">
+              <h3 class="text-white text-base xs:text-lg leading-5 text-center font-semibold ">Kindly register by filling in
+                your details below.</h3>
+            </div>
+            <div class="mb-6">
+              <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Name<span class="text-[#da043a] ms-[2px]">*</span></label>
+              <input type="text" name="fullName" required class="bg-white rounded-md w-full h-full py-2 focus:outline-none px-1">
+            </div>
+            <div class="mb-6">
+              <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Entity <span class="text-[#da043a] ms-[2px]">*</span></label>
+              <select name="entity" required class="select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1 " >
+                <option value="" selected>Choose</option>
+                <option value="NETS">NETS</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Work Email<span class="text-[#da043a] ms-[2px]">*</span></label>
+              <input type="email" name="email" class="bg-white rounded-md w-full h-full py-2 focus:outline-none px-1">
+            </div>
+            <div class="mb-6">
+              <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Personal Email<span class="text-[#da043a] ms-[2px]">*</span></label>
+              <input type="email" name="suppl_email" class="bg-white rounded-md w-full h-full py-2 focus:outline-none px-1">
+            </div>
+            <div class="mb-6">
+              <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Department<span class="text-[#da043a] ms-[2px]">*</span></label>
+              <select name="department" required class="select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1 ">
+                <option value="" selected>Choose</option>
+                <option value="(NETS) Merchant Business">(NETS) Merchant Business</option>
+                <option value="(NETS) Consumer Business & Business Development">(NETS) Consumer Business & Business Development</option>
+                <option value="(NETS) Customer Service & Operations - Customer Resolutions & Reconciliation">(NETS) Customer Service & Operations - Customer Resolutions & Reconciliation</option>
+                <option value="(NETS) Corporate Services - Strategic Marketing & Corporate Communication">(NETS) Corporate Services - Strategic Marketing & Corporate Communication</option>
+                <option value="(BCS) Technology - Infrastructure Services">(BCS) Technology - Infrastructure Services</option>
+                <option value="(BCS) IT Security">(BCS) IT Security </option>
+                <option value="(BCS) Technology - IT Governance">(BCS) Technology - IT Governance</option>
+                <option value="(NETS) Corporate Services - Corporate Strategy & Planning">(NETS) Corporate Services - Corporate Strategy & Planning</option>
+                <option value="(NETS) Merchant Business - Merch Relations and Services & Analytics">(NETS) Merchant Business - Merch Relations and Services & Analytics</option>
+                <option value="(NETS) Finance & CWS - Finance">(NETS) Finance & CWS - Finance</option>
+                <option value="(BCS) Technology - Management Information Systems">(BCS) Technology - Management Information Systems</option>
+                <option value="(NETS) Technology - IT Infra">(NETS) Technology - IT Infra</option>
+                <option value="(NETS) Human Capital Management">(NETS) Human Capital Management</option>
+                <option value="(NETS) Product">(NETS) Product</option>
+                <option value="(NETS) Risk & Compliance">(NETS) Risk & Compliance</option>
+                <option value="(NETS) Finance & CWS - Corporate & Workplace Solutions">(NETS) Finance & CWS - Corporate & Workplace Solutions</option>
+                <option value="(NETS) Merchant Business - Merch Acquisition (Online & Alt Pymts)">(NETS) Merchant Business - Merch Acquisition (Online & Alt Pymts)</option>
+                <option value="(BCS) Commercial">(BCS) Commercial</option>
+                <option value="(NETS) Technology - IT Operations">(NETS) Technology - IT Operations</option>
+                <option value="(NETS) Corporate Services">(NETS) Corporate Services</option>
+                <option value="(NETS) Audit">(NETS) Audit</option>
+                <option value="(NETS) Technology - Grow & Transform">(NETS) Technology - Grow & Transform</option>
+                <option value="(NETS) Technology - Management Information Systems">(NETS) Technology - Management Information Systems</option>
+                <option value="(NETS) Customer Service & Operations - CS&O Process Re-engineering">(NETS) Customer Service & Operations - CS&O Process Re-engineering</option>
+                <option value="(NS--SG) Delivery & Support Group">(NS--SG) Delivery & Support Group</option>
+                <option value="(NETS) Merchant Business - Merchant Acquisition (Card Payments)">(NETS) Merchant Business - Merchant Acquisition (Card Payments)</option>
+                <option value="(BCS) Technology - Digital Transformation Office">(BCS) Technology - Digital Transformation Office</option>
+                <option value="(BCS) CEO Office">(BCS) CEO Office</option>
+                <option value="(NETS) Corporate Services - Legal & Secretariat">(NETS) Corporate Services - Legal & Secretariat</option>
+                <option value="(NETS) Technology & Operations">(NETS) Technology & Operations</option>
+                <option value="(NETS) CEO Office">(NETS) CEO Office</option>
+                <option value="(NETS) Finance & CWS">(NETS) Finance & CWS</option>
+                <option value="(NS--SG) Bureau Services">(NS--SG) Bureau Services</option>
+                <option value="(NETS) Card Centre">(NETS) Card Centre</option>
+                <option value="(BCS) Technology - Application Support">(BCS) Technology - Application Support</option>
+                <option value="(NETS) Customer Service & Operations - Contact Centre">(NETS) Customer Service & Operations - Contact Centre</option>
+                <option value="(NETS) Technology - IT Governance">(NETS) Technology - IT Governance</option>
+                <option value="(NS--KL) Delivery & Support Group">(NS--KL) Delivery & Support Group</option>
+                <option value="(NETS) Customer Service & Operations">(NETS) Customer Service & Operations</option>
+                <option value="(NETS) IT Security">(NETS) IT Security</option>
+                <option value="(NETS) Customer Service & Operations - Merchant Projects">(NETS) Customer Service & Operations - Merchant Projects</option>
+                <option value="(BCS) Technology - Strategy & Transformation">(BCS) Technology - Strategy & Transformation</option>
+                <option value="(NS--KL) Finance & CWS">(NS--KL) Finance & CWS</option>
+                <option value="(NETS) Customer Service & Operations - Merchant Assessment & Merchant Ops">(NETS) Customer Service & Operations - Merchant Assessment & Merchant Ops</option>
+                <option value="(NS--KL) Customer Service & Operations">(NS--KL) Customer Service & Operations</option>
+                <option value="(BCS) Technology - Technology Service & Operations">(BCS) Technology - Technology Service & Operations</option>
+                <option value="(NS--KL) Technology">(NS--KL) Technology</option>
+                <option value="(BCS) Technology ">(BCS) Technology </option>
+                <option value="(BCS) Technology - Data Centre">(BCS) Technology - Data Centre</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <p class="text-white text-base xs:text-lg leading-5 text-center font-semibold ">Will you be attending the
+                NETS Kickoff Townhall 2025?</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center mb-4">
+                <input 
+                  id="yes-checkbox" 
+                  type="checkbox" 
+                  name="rsvp"
+                  value="yes" 
+                  class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-50">
+                <label for="yes-checkbox" class="text-white text-lg leading-5 font-semibold ms-3">
+                  Yes, I will be attending
+                </label>
+              </div>
+              <div class="flex items-center mb-4">
+                <input 
+                  id="no-checkbox" 
+                  type="checkbox"
+                  name="rsvp" 
+                  value="no" 
+                  class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-50">
+                <label for="no-checkbox" class="text-white text-lg leading-5 font-semibold ms-3">
+                  No, I will not be attending
+                </label>
+              </div>
+            </div>
+            <div id="reason-section" class="mb-6 hidden">
+              <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">
+                If No is selected, please indicate reason why 
+              </label>
+              <select 
+                id="reason-select" 
+                name="no-rsvp"
+                class="select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1" 
+                >
+                <option value="" selected>Choose</option>
+                <option value="leave">I will be on leave</option>
+                <option value="work">I am excused due to work exigencies</option>
+                <option value="Others" >Others</option>
+              </select>
+            </div>
+            <div id="other-reason-section" class="mb-6 hidden">
+              <input 
+                type="text"
+                name="no-rsvp-others" 
+                placeholder="Please Indicate" 
+                class="focus:outline-none border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white">
+            </div>
+            <div class="mb-6">
+              <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Do you have any dietary
+                restrictions?</label>
+              <select id="main_select_services" name="dietary_restrictions" required class="select-services select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1 " >
+                <option value="" selected>Choose</option>
+                <option value="no">No</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Others" class="capitalize">Others</option>
+              </select>
+            </div>
+            <div class="mb-6 hidden " id="btm-other" class="mb-6 hidden">
+              <input type="text" name="dietary_restrictions_others" placeholder="Please Indicate" class="focus:outline-none border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white ">
+            </div>
+          </div>
+          <div class="mb-6 text-center">
+            <button class="rounded-3xl text-white text-lg leading-[20px] bg-[#e70033] px-[50px] font-semibold py-[16px] ">Submit</button>
+        </form>
+      </div></div>
+  </div>
+  <div id="thanks" class="hidden max-h-screen overflow-y-auto m-auto z-[1] relative border border-solid max-w-[768px]  mx-auto bg-no-repeat h-screen w-screen flex flex-col justify-between"  style="background-image: url('assets/bg.png'); background-size: 100%;">
+    <div class="text-center pt-20">
+        <img src="assets/logo.png" alt="logo" class="w-full max-w-[250px] xss:max-w-[300px] md:max-w-[400px] mx-auto mb-8">
+    </div>
+    <div class="px-container-padding max-w-container mx-auto">
+        <h3 class="text-[#0448ae] font-semibold leading-[40px] xxs:leading-[50px] text-4xl mb-[30px] text-center">Thank you <br/> for your RSVP!</h3>
+        <p class="text-[#0448ae] font-semibold text-lg xss:text-2xl leading-[22px] xss:leading-[30px] tracking-tight w-full max-w-[300px] mx-auto text-center">A QR code is on its way
+            to your email. If you can't
+            find it, please check your
+            spam or junk folder.</p>
+    </div>
+    <div class="mb-6 text-center px-container-padding max-w-container mx-auto">
+        <button id="toggle-home" class="rounded-3xl text-white text-lg leading-[20px] bg-[#e70033] px-[60px] font-semibold py-[16px] ">Done</button>
+    </div>
+</div>
+
+  <script>
+    const otherReasonSection = document.getElementById('other-reason-section');
+    document.querySelector('a.others').addEventListener('click', function(event) {
+      event.preventDefault();
+  
+      if (this.classList.contains('others') && this.classList.contains('active')) {
+        otherReasonSection.classList.remove('hidden');
+      } else {
+        otherReasonSection.classList.add('hidden');
+      }
+    });
+  </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="./main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const yesCheckbox = document.getElementById('yes-checkbox');
+    const noCheckbox = document.getElementById('no-checkbox');
+    const reasonSection = document.getElementById('reason-section');
+    const reasonSelect = document.getElementById('reason-select');
+    const otherReasonSection = document.getElementById('other-reason-section');
+
+    yesCheckbox.addEventListener('change', () => {
+      if (yesCheckbox.checked) {
+        noCheckbox.checked = false;
+        reasonSection.classList.add('hidden');
+        // otherReasonSection.classList.add('hidden');
+      }
+    });
+
+    noCheckbox.addEventListener('change', () => {
+      if (noCheckbox.checked) {
+        yesCheckbox.checked = false;
+        reasonSection.classList.remove('hidden');
+        // reasonSelect.value = ""; 
+        // otherReasonSection.classList.add('hidden');
+      }else{
+        reasonSection.classList.add('hidden');
+      }
+    });
+  });
+
+</script>
+
+ 
+</body>
+</html>

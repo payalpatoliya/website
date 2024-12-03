@@ -1,0 +1,278 @@
+.select-club-services {
+	--max-scroll: 8;
+	--text: #191919;
+	--border: #687898;
+	--borderActive: #fff;
+	--background: #fff;
+	--arrow: #6C7486;
+	--arrowActive: #E4ECFA;
+	--listText: #191919;
+	--listBackground: #F5F9FF;
+	--listActive: #E4ECFA;
+	--listTextActive: #6C7486;
+	--listBorder: none;
+	--textFilled: #191919;
+	width: 220px;
+	position: relative;
+}
+.hidden {
+	display: none;
+  }
+  
+  .swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0.8em 1em 0;
+    color: inherit;
+    font-size: 15px !important;
+  }
+.select-club-services select {
+	display: none;
+}
+.select-club-services{
+  width: 100%;
+}
+.select-club-services > div {
+	cursor: pointer;
+	padding: 8px 4px;
+	border-radius:6px;
+  width: 100%;
+	display: block;
+	position: relative;
+	color: #9E9E9E;
+	background: var(--background);
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.select-club-services > div:before, .select-club-services > div:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 2px;
+	border-radius: 1px;
+	top: 50%;
+	right: 15px;
+	background: var(--arrow);
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.select-club-services > div:before {
+	margin-right: 4px;
+	-webkit-transform: scale(0.96, 0.8) rotate(50deg);
+	transform: scale(0.96, 0.8) rotate(50deg);
+}
+.select-club-services > div:after {
+	-webkit-transform: scale(0.96, 0.8) rotate(-50deg);
+	transform: scale(0.96, 0.8) rotate(-50deg);
+}
+.select-club-services ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	max-height: calc(var(--max-scroll) * 42px);
+	top: 42px;
+	left: 0;
+	z-index: 1;
+	right: 0;
+	background: var(--listBackground);
+	border-radius: 6px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transition: opacity 0.2s ease, visibility 0.2s ease, -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+	transition: opacity 0.2s ease, visibility 0.2s ease, -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+	transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+	transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32), -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+	-webkit-transform: scale(0.8) translate(0, 4px);
+	transform: scale(0.8) translate(0, 4px);
+	border: 1px solid var(--listBorder);
+}
+.select-club-services ul li {
+	opacity: 0;
+	-webkit-transform: translate(6px, 0);
+	transform: translate(6px, 0);
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	position:  relative;
+}
+.select-club-services ul li::before{
+	position: absolute;
+	background-color: white;
+	height: 1px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.select-club-services ul li a {
+	cursor: pointer;
+	display: block;
+	padding: 6px 16px;
+	color: #595D5E;
+	text-decoration: none;
+	outline: none;
+	position: relative;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	position: relative;
+}
+.select-club-services ul li a:hover {
+	color: var(--listTextActive);
+}
+.select-club-services ul li.active a {
+	color: var(--listTextActive);
+	background: var(--listActive);
+}
+.select-club-services ul li.active a:before, .select-club-services ul li.active a:after {
+	--scale: .6;
+	content: '';
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	right: 17px;
+	top: 50%;
+	opacity: 0;
+	background: var(--listText);
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.select-club-services ul li.active a:before {
+	-webkit-transform: rotate(45deg) scale(var(--scale));
+	transform: rotate(45deg) scale(var(--scale));
+}
+.select-club-services ul li.active a:after {
+	-webkit-transform: rotate(-45deg) scale(var(--scale));
+	transform: rotate(-45deg) scale(var(--scale));
+}
+.select-club-services ul li.active a:hover:before, .select-club-services ul li.active a:hover:after {
+	--scale: .9;
+	opacity: 1;
+}
+.select-club-services ul li:first-child a {
+	border-radius: 6px 6px 0 0;
+}
+.select-club-services ul li:last-child a {
+	border-radius: 0 0 6px 6px;
+}
+.select-club-services.filled > div {
+	color: #303030;
+}
+.select-club-services.open > div {
+	border-color: var(--borderActive);
+}
+.select-club-services.open > div:before, .select-club-services.open > div:after {
+	background: var(--arrowActive);
+}
+.select-club-services.open > div:before {
+	-webkit-transform: scale(0.96, 0.8) rotate(-50deg);
+	transform: scale(0.96, 0.8) rotate(-50deg);
+}
+.select-club-services.open > div:after {
+	-webkit-transform: scale(0.96, 0.8) rotate(50deg);
+	transform: scale(0.96, 0.8) rotate(50deg);
+}
+.select-club-services.open ul {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(1) translate(0, 12px);
+	transform: scale(1) translate(0, 12px);
+	-webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+	transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32), -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+  background-color: #C4E7FA;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.select-club-services.open ul li {
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+  text-align: center;
+}
+.select-club-services.open ul li:nth-child(1) {
+	-webkit-transition-delay: 80ms;
+	transition-delay: 80ms;
+}
+.select-club-services.open ul li:nth-child(2) {
+	-webkit-transition-delay: 160ms;
+	transition-delay: 160ms;
+}
+.select-club-services.open ul li:nth-child(3) {
+	-webkit-transition-delay: 240ms;
+	transition-delay: 240ms;
+}
+.select-club-services.open ul li:nth-child(4) {
+	-webkit-transition-delay: 320ms;
+	transition-delay: 320ms;
+}
+.select-club-services.open ul li:nth-child(5) {
+	-webkit-transition-delay: 400ms;
+	transition-delay: 400ms;
+}
+.select-club-services.open ul li:nth-child(6) {
+	-webkit-transition-delay: 480ms;
+	transition-delay: 480ms;
+}
+.select-club-services.open ul li:nth-child(7) {
+	-webkit-transition-delay: 560ms;
+	transition-delay: 560ms;
+}
+.select-club-services.open ul li:nth-child(8) {
+	-webkit-transition-delay: 640ms;
+	transition-delay: 640ms;
+}
+.select-club-services.open ul li:nth-child(9) {
+	-webkit-transition-delay: 720ms;
+	transition-delay: 720ms;
+}
+.select-club-services.open ul li:nth-child(10) {
+	-webkit-transition-delay: 800ms;
+	transition-delay: 800ms;
+}
+
+select {
+	--text: #3F4656;
+	--border: #2F3545;
+	--background: #151924;
+}
+select.select-club-services {
+	color: var(--text);
+	background: var(--background);
+	-webkit-appearance: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+  margin: 70px 0;
+  box-shadow: inset 0px 7px 2px white;
+  margin-right: 20px;
+  height: 20px;
+  box-shadow: 0px 0px 10px 2px #d1d1d1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e70033;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  height: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+@media(max-width:425px){
+	.select-club-services ul li a{
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
